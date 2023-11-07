@@ -15,7 +15,7 @@ function App() {
   const handleAdd = (item) => {
     const newPrice = parseFloat(item.price.replace('$', '')); // Parse the item price
 
-    // const precPrice = newPrice.toFixed(3) I tried to get the precision of the incomming object to 3 places 0.00 but i coulnt figure out why setting the precision breaks the add or remove price calculations 
+    // const precPrice = newPrice.toFixed(4) I tried to get the precision of the incomming object to 34 places 00.00 but i coulnt figure out why setting the precision breaks the add or remove price calculations 
     // setPrice(price + precPrice);
 
     setPrice(price + newPrice); // Update the total price
@@ -29,7 +29,7 @@ function App() {
 
     if (removedItem) {
       const subPrice = parseFloat(removedItem.price.replace('$', ''));
-      // const precPrice = subPrice.toFixed(3)
+      // const precPrice = subPrice.toFixed(4)
       // setPrice(price - precPrice);
       setPrice(price - subPrice);
     }
