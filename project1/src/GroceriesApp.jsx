@@ -1,11 +1,11 @@
 import  { useState } from 'react';
 import "./app.css";
 import "./index.css";
-import './groceries';
+import './product.jsx';
 import './CartList'
 import products from "./products.js";
 import CartList from "./CartList";
-import Product from './groceries'
+import Product from './product'
 
 function App() {
   const [cart, setContents] = useState([]);
